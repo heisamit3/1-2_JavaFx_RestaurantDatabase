@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="450.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
+   <children>
+      <AnchorPane styleClass="myPane2" fx:id="customerLogin" prefHeight="450.0" prefWidth="600.0" visible="false">
+         <children>
+            <Label layoutX="192.0" layoutY="169.0" text="Username" />
+            <TextField fx:id="userText" layoutX="288.0" layoutY="165.0" />
+            <Button fx:id="regesterButton" layoutX="219.0" layoutY="271.0" mnemonicParsing="false" onAction="#regesterActionForCustomer" prefHeight="26.0" prefWidth="102.0" text="Register" />
+            <Button fx:id="loginButton" layoutX="346.0" layoutY="271.0" mnemonicParsing="false" onAction="#loginActionForCustomer" prefHeight="26.0" prefWidth="91.0" text="Login" />
+            <PasswordField fx:id="passwordText" layoutX="288.0" layoutY="212.0" />
+            <Label layoutX="191.0" layoutY="216.0" prefHeight="18.0" prefWidth="68.0" text="Password" />
+            <Label layoutX="221.0" layoutY="92.0" prefHeight="38.0" prefWidth="199.0" text="Customer Login Page">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="customerBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#customerBackAction" prefHeight="26.0" prefWidth="54.0" text="Back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane styleClass="myPane" fx:id="restaurantLogin" prefHeight="450.0" prefWidth="600.0" visible="false">
+         <children>
+            <Label layoutX="161.0" layoutY="163.0" text="Username" />
+            <TextField fx:id="userText1" layoutX="257.0" layoutY="159.0" />
+            <Button fx:id="regesterButton1" layoutX="188.0" layoutY="265.0" mnemonicParsing="false" onAction="#regesterActionForRestaurant" prefHeight="26.0" prefWidth="102.0" text="Add Restaurant" />
+            <Button fx:id="loginButton1" layoutX="315.0" layoutY="265.0" mnemonicParsing="false" onAction="#loginActionForRestaurant" prefHeight="26.0" prefWidth="91.0" text="Login" />
+            <PasswordField fx:id="passwordText1" layoutX="257.0" layoutY="206.0" />
+            <Label layoutX="160.0" layoutY="210.0" prefHeight="18.0" prefWidth="68.0" text="Password" />
+            <Label layoutX="173.0" layoutY="80.0" prefHeight="37.0" prefWidth="214.0" text="Restaurant Login Page">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button fx:id="restaurantBack" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#restaurantBackAction" prefHeight="26.0" prefWidth="54.0" text="Back" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="initialTwoLogin" visible="true" prefHeight="450.0" prefWidth="600.0" style="-fx-background-color: #1c4c3a;">
+         <children>
+            <Button fx:id="restaurantLoginMain" layoutX="159.0" layoutY="166.0" mnemonicParsing="false" onAction="#restaurantLoginMainAction" prefHeight="58.0" prefWidth="282.0" text="Restaurant Login">
+               <font>
+                  <Font size="27.0" />
+               </font>
+            </Button>
+            <Button fx:id="customerLoginMain" layoutX="159.0" layoutY="253.0" mnemonicParsing="false" onAction="#customerLoginMainAction" prefHeight="58.0" prefWidth="282.0" text="Customer Login">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Button>
+            <Label layoutX="159.0" layoutY="34.0" prefHeight="48.0" prefWidth="304.0" text="Restaurant Management System" textFill="#302525">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane styleClass="myPane3" fx:id="addRestaurantPane" layoutX="6.0" prefHeight="450.0" prefWidth="600.0" visible="false">
+         <children>
+            <Button fx:id="restaurantBack1" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" onAction="#restaurantBackAction" prefHeight="26.0" prefWidth="54.0" text="Back" />
+            <VBox layoutX="119.0" layoutY="70.0" prefHeight="296.0" prefWidth="362.0">
+               <children>
+                  <HBox prefHeight="52.0" prefWidth="362.0">
+                     <children>
+                        <Label prefHeight="52.0" prefWidth="114.0" text="Name     :">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addRName" layoutY="5.0" prefHeight="31.0" prefWidth="249.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="362.0">
+                     <children>
+                        <Label prefHeight="52.0" prefWidth="114.0" text="Score      :">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addRScore" prefHeight="31.0" prefWidth="249.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="362.0">
+                     <children>
+                        <Label prefHeight="52.0" prefWidth="114.0" text="Price       :">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addRPrice" prefHeight="31.0" prefWidth="251.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox prefHeight="52.0" prefWidth="362.0">
+                     <children>
+                        <Label prefHeight="52.0" prefWidth="114.0" text="Zip Code :">
+                           <font>
+                              <Font size="24.0" />
+                           </font>
+                        </Label>
+                        <TextField fx:id="addRZC" prefHeight="31.0" prefWidth="249.0">
+                           <HBox.margin>
+                              <Insets top="10.0" />
+                           </HBox.margin>
+                        </TextField>
+                     </children>
+                  </HBox>
+                  <HBox layoutX="10.0" layoutY="166.0" prefHeight="98.0" prefWidth="362.0">
+                     <children>
+                        <VBox prefHeight="97.0" prefWidth="135.0">
+                           <children>
+                              <Label prefHeight="30.0" prefWidth="114.0" text="catagory 1 :">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="30.0" prefWidth="182.0" text="catagory 2 :">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                              <Label prefHeight="30.0" prefWidth="182.0" text="catagory 3 :">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="97.0" prefWidth="270.0">
+                           <children>
+                              <TextField fx:id="addRCata1" prefHeight="29.0" prefWidth="249.0" />
+                              <TextField fx:id="addRCata2" prefHeight="33.0" prefWidth="226.0" />
+                              <TextField fx:id="addRCata3" prefHeight="32.0" prefWidth="227.0" />
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+               </children>
+            </VBox>
+            <Button fx:id="addRBtn" layoutX="253.0" layoutY="390.0" mnemonicParsing="false" prefHeight="34.0" prefWidth="150.0" text="Add Restaurant" onAction="#addRBtnAction">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

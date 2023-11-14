@@ -1,0 +1,50 @@
+/* Normal style for .rProfileBtn */
+.button1{
+    -fx-background-color: #1B1811; /* Set the initial background color */
+    -fx-text-fill: white;
+    -fx-font-size: 20px;
+    -fx-font-weight: normal; /* Set the initial font weight */
+    -fx-font-family: 'Courier New', monospace; /* Set the font family to 'Courier New' */
+}
+
+/* Hover style for .rProfileBtn */
+.button1:hover{
+    -fx-background-color: #1A2228; /* Change the background color on hover */
+    -fx-text-fill: white; /* Keep the same text color on hover */
+    -fx-font-size: 22px; /* Increase the font size on hover */
+    -fx-font-weight: bold; /* Make the text bold on hover */
+    -fx-font-family: 'Courier New', monospace; /* Set the font family to 'Courier New' on hover */
+}
+
+
+.buttonS{
+    -fx-background-color: #1B1811; /* Set the initial background color */
+    -fx-text-fill: white;
+    -fx-font-size: 15px;
+    -fx-font-weight: normal; /* Set the initial font weight */
+    -fx-font-family: 'Courier New', monospace; /* Set the font family to 'Courier New' */
+}
+
+/* Hover style for .rProfileBtn */
+.buttonS:hover{
+    -fx-background-color: #1A2228; /* Change the background color on hover */
+    -fx-text-fill: white; /* Keep the same text color on hover */
+    -fx-font-size: 17px; /* Increase the font size on hover */
+    -fx-font-weight: bold; /* Make the text bold on hover */
+    -fx-font-family: 'Courier New', monospace; /* Set the font family to 'Courier New' on hover */
+}
+
+
+
+
+.myPane{
+    -fx-background-color: #7DC4C8;
+}
+
+.myPane2{
+    -fx-background-color: #f5f571;
+}
+
+.myPane3{
+    -fx-background-color: #7bc2e9;
+}
